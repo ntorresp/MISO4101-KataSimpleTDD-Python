@@ -41,3 +41,7 @@ class KataSimpleTDDTest(TestCase):
 
     def test_maximo_string_con_dos_numeros(self):
         self.assertEqual(KataSimpleTDD().maximo("5,8"),8,"Maximo de dos numeros")
+
+    def test_maximo_string_con_N_numeros(self):
+        self.assertEqual(KataSimpleTDD().maximo("5,96,74,252,63,84,99,15"),252, "Maximo de N numeros")
+        
