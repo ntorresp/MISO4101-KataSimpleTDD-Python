@@ -18,3 +18,6 @@ class KataSimpleTDDTest(TestCase):
 
     def test_contar_conMultiplesNumeros(self):
         self.assertEqual(KataSimpleTDD().contar("1,5,9,3,4"), 5,"Multiples numeros")
+
+    def test_minimo_string_vacio(self):
+        self.assertEqual(KataSimpleTDD().minimo(""),0,"Mínimo de string vacío")
