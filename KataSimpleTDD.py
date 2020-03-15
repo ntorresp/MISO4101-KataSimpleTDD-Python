@@ -5,4 +5,4 @@ class KataSimpleTDD:
         if cadena == "":
             return 0
         else:
-            return 1
+            return len(cadena)
