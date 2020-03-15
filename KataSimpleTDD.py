@@ -44,3 +44,11 @@ class KataSimpleTDD:
             return sumaParcial / float(cantidadValores)
         else:
             return int(cadena)
+
+    def resultado(self, cadena):
+        result = []
+        result.append(self.contar(cadena))
+        result.append(self.minimo(cadena))
+        result.append(self.maximo(cadena))
+        result.append(self.promedio(cadena))
+        return result
