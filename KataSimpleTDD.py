@@ -35,5 +35,12 @@ class KataSimpleTDD:
     def promedio(self, cadena):
         if cadena == "":
             return 0
+        elif "," in cadena:
+            cadenaSplit = cadena.split(",")
+            sumaParcial = 0
+            for valor in cadenaSplit:
+                sumaParcial += int(valor)
+            cantidadValores = len(cadenaSplit)
+            return sumaParcial / float(cantidadValores)
         else:
             return int(cadena)
