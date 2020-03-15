@@ -15,6 +15,8 @@ class KataSimpleTDD:
             return 0
         elif "," in cadena:
             cadenaSplit = cadena.split(",")
-            return int(min(cadenaSplit))
+            for i in range(0, len(cadenaSplit)):
+                cadenaSplit[i] = int(cadenaSplit[i])
+            return min(cadenaSplit)
         else:
             return int(min(cadena))
