@@ -11,4 +11,7 @@ class KataSimpleTDD:
             return len(cadena)
 
     def minimo(self, cadena):
-        return 0
+        if cadena == "":
+            return 0
+        else:
+            return 1
