@@ -57,3 +57,6 @@ class KataSimpleTDDTest(TestCase):
     def test_promedio_string_con_una_cadena(self):
         self.assertEqual(KataSimpleTDD().promedio("1"), 1, "Promedio de string con una cadena")
         self.assertEqual(KataSimpleTDD().promedio("2"), 2, "Promedio de string con una cadena")
+
+    def test_promedio_string_con_dos_numeros_cadena(self):
+        self.assertEqual(KataSimpleTDD().promedio("2,4"),3, "Promedio de string con dos números")
