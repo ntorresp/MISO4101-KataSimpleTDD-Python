@@ -37,3 +37,4 @@ class KataSimpleTDDTest(TestCase):
 
     def test_maximo_string_con_una_cadena(self):
         self.assertEqual(KataSimpleTDD().maximo("1"),1,"Maximo de una cadena")
+        self.assertEqual(KataSimpleTDD().maximo("2"),2,"Maximo de un numero")
