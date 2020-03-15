@@ -53,3 +53,6 @@ class KataSimpleTDDTest(TestCase):
     # Hallar el promedio de los elementos
     def test_promedio_string_vacio(self):
         self.assertEqual(KataSimpleTDD().promedio(""),0, "Promedio de string vacío")
+
+    def test_promedio_string_con_una_cadena(self):
+        self.assertEqual(KataSimpleTDD().promedio("1"), 1, "Promedio de string con una cadena")
