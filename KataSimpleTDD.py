@@ -13,5 +13,8 @@ class KataSimpleTDD:
     def minimo(self, cadena):
         if cadena == "":
             return 0
+        elif "," in cadena:
+            cadenaSplit = cadena.split(",")
+            return int(min(cadenaSplit))
         else:
             return int(min(cadena))
