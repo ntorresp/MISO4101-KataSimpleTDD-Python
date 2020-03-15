@@ -3,6 +3,9 @@ from unittest import TestCase
 from KataSimpleTDD import KataSimpleTDD
 
 class KataSimpleTDDTest(TestCase):
+
+    #Contar Número de elementos
+
     def test_contar(self):
         self.assertEqual(KataSimpleTDD().contar(""), 0,"Cadena vacia")
         
@@ -19,6 +22,7 @@ class KataSimpleTDDTest(TestCase):
     def test_contar_conMultiplesNumeros(self):
         self.assertEqual(KataSimpleTDD().contar("1,5,9,3,4"), 5,"Multiples numeros")
 
+    # Hallar el mínimo de elementos
     def test_minimo_string_vacio(self):
         self.assertEqual(KataSimpleTDD().minimo(""),0,"Mínimo de string vacío")
 
@@ -32,6 +36,7 @@ class KataSimpleTDDTest(TestCase):
     def test_minimo_string_con_N_numeros_cadena(self):
         self.assertEqual(KataSimpleTDD().minimo("5,9,4,10,80"),4,"Mínimo de una cadena con N números")
 
+    # Hallar el máximo de elementos
     def test_maximo_string_vacion(self):
         self.assertEqual(KataSimpleTDD().maximo(""),0,"Maximo de string vacio")
 
@@ -45,3 +50,6 @@ class KataSimpleTDDTest(TestCase):
     def test_maximo_string_con_N_numeros(self):
         self.assertEqual(KataSimpleTDD().maximo("5,96,74,252,63,84,99,15"),252, "Maximo de N numeros")
         
+    # Hallar el promedio de los elementos
+    def test_promedio_string_vacio(self):
+        self.assertEqual(KataSimpleTDD().promedio(""),0, "Promedio de string vacío")
