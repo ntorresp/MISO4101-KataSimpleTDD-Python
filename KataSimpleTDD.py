@@ -1,11 +1,9 @@
-
-
 class KataSimpleTDD:
     def contar(self, cadena):
         if cadena == "":
             return 0
         elif "," in cadena:
-            cadenaSplit= cadena.split(",")
+            cadenaSplit = cadena.split(",")
             return len(cadenaSplit)
         else:
             return len(cadena)
@@ -21,8 +19,8 @@ class KataSimpleTDD:
         else:
             return int(min(cadena))
 
-    def maximo(self,cadena):
-        if cadena =="":
+    def maximo(self, cadena):
+        if cadena == "":
             return 0
         elif "," in cadena:
             cadenaSplit = cadena.split(",")
@@ -46,9 +44,5 @@ class KataSimpleTDD:
             return int(cadena)
 
     def resultado(self, cadena):
-        result = []
-        result.append(self.contar(cadena))
-        result.append(self.minimo(cadena))
-        result.append(self.maximo(cadena))
-        result.append(self.promedio(cadena))
+        result = [self.contar(cadena), self.minimo(cadena), self.maximo(cadena), self.promedio(cadena)]
         return result
