@@ -20,3 +20,6 @@ class KataSimpleTDD:
             return min(cadenaSplit)
         else:
             return int(min(cadena))
+
+    def maximo(self,cadena):
+        return 0
