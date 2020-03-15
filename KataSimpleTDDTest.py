@@ -31,3 +31,6 @@ class KataSimpleTDDTest(TestCase):
 
     def test_minimo_string_con_N_numeros_cadena(self):
         self.assertEqual(KataSimpleTDD().minimo("5,9,4,10,80"),4,"Mínimo de una cadena con N números")
+
+    def test_maximo_string_vacion(self):
+        self.assertEqual(KataSimpleTDD().maximo(""),0,"Maximo de string vacio")
