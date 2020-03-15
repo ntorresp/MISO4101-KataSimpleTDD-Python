@@ -63,3 +63,7 @@ class KataSimpleTDDTest(TestCase):
 
     def test_promedio_string_con_N_numeros_cadena(self):
         self.assertEqual(KataSimpleTDD().promedio("4,6,8,13,20"),10.2, "Promedio de string con N números")
+
+    #Entregar Resultado completo
+    def test_entregar_resultado_completo(self):
+        self.assertEqual(KataSimpleTDD().resultado("4,6,8,13,20"),[5,4,20,10.2], "Resultados con N números")
