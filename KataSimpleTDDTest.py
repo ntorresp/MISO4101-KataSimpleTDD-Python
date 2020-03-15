@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-import KataSimpleTDD
+from KataSimpleTDD import KataSimpleTDD
 
 class KataSimpleTDDTest(TestCase):
     def test_contar(self):

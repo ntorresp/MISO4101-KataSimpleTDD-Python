@@ -1,5 +1,5 @@
 
 
 class KataSimpleTDD:
-    def contar(cadena):
-        pass
+    def contar(self, cadena):
+        return 0
