@@ -28,3 +28,6 @@ class KataSimpleTDDTest(TestCase):
 
     def test_minimo_string_con_dos_numeros_cadena(self):
         self.assertEqual(KataSimpleTDD().minimo("5,3"),3,"Mínimo de una cadena con dos números")
+
+    def test_minimo_string_con_N_numeros_cadena(self):
+        self.assertEqual(KataSimpleTDD().minimo("5,9,4,10,80"),4,"Mínimo de una cadena con N números")
