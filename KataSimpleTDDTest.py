@@ -14,4 +14,7 @@ class KataSimpleTDDTest(TestCase):
         self.assertEqual(KataSimpleTDD().contar("2"), 1,"Un numero")
 
     def test_contar_conDosNumeros(self):
-        self.assertEqual(KataSimpleTDD().contar("1,2"),2,"Dos numeros")
+        self.assertEqual(KataSimpleTDD().contar("1,2"), 2,"Dos numeros")
+
+    def test_contar_conMultiplesNumeros(self):
+        self.assertEqual(KataSimpleTDD().contar("1,5,9,3,4"), 5,"Multiples numeros")
