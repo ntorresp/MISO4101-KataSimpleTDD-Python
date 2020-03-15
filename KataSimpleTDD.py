@@ -31,3 +31,6 @@ class KataSimpleTDD:
             return max(cadenaSplit)
         else:
             return int(cadena)
+
+    def promedio(self, cadena):
+        return 0
