@@ -24,5 +24,8 @@ class KataSimpleTDD:
     def maximo(self,cadena):
         if cadena =="":
             return 0
+        elif "," in cadena:
+            cadenaSplit = cadena.split(",")
+            return int(max(cadenaSplit))
         else:
             return int(cadena)
