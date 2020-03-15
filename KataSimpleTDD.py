@@ -9,3 +9,6 @@ class KataSimpleTDD:
             return len(cadenaSplit)
         else:
             return len(cadena)
+
+    def minimo(self, cadena):
+        return 0
